@@ -1,8 +1,18 @@
+nestedRanksTest 0.2
+===================
+
+-   Output of print.htest_boot now recognises digits and prefix options.
+    For digits the default is getOption("digits"), just as for
+    print.htest. Test result files are updated.
+-   Tweak output of print.htest_boot so bootstrap iterations count is
+    prefixed by ': ' rather than ' = ', for consistency with other
+    printed values
+
 nestedRanksTest 0.1
 ===================
 
--   Initial release
--   Provides S3 generic nestedRanksTest(), with function and default
+-   Initial release on CRAN
+-   Provides S3 generic nestedRanksTest(), with formula and default
     methods
 -   Provides print and plot methods for class 'htest_boot', which
     extends class 'htest' by including information on the generation and

@@ -15,6 +15,19 @@ available in R as [`wilcox.test`][wilcox].
 
 [wilcox]: https://stat.ethz.ch/R-manual/R-patched/library/stats/html/wilcox.test.html
 
+The latest stable release of the package can be downloaded from CRAN:
+
+```R
+install.packages("nestedRanksTest")
+library(nestedRanksTest)
+```
+
+Help is available via `?nestedRanksTest`, and a vignette is available via:
+
+```R
+vignette("nestedRanksTest")
+```
+
 The development version is hosted on github and can be installed via:
 
 ```R
@@ -23,12 +36,10 @@ devtools::install_github("douglasgscofield/nestedRanksTest", build_vignettes = T
 library(nestedRanksTest)
 ```
 
-Help is available via `?nestedRanksTest`.
-
 * * *
 These statistical tools were developed in collaboration with Peter E.
-Smouse (Rutgers University) and Victoria L. Sork (UCLA) and were funded by
-U.S. National Science Foundation awards NSF-DEB-0514956 and
+Smouse (Rutgers University) and Victoria L. Sork (UCLA) and were funded
+in part by U.S. National Science Foundation awards NSF-DEB-0514956 and
 NSF-DEB-0516529.
 * * *
 
@@ -54,7 +65,7 @@ print(result)
 	Nested Ranks Test
 
 data:  Distance by Year grouped by Granary
-Z = 0.277, p-value = 1e-04
+Z = 0.27695, p-value = 1e-04
 alternative hypothesis: Z lies above bootstrapped null values
 null values:
       0%       1%       5%      10%      25%      50%      75%      90%      95%
@@ -62,7 +73,7 @@ null values:
      99%     100% 
  0.15335  0.27695 
 
-bootstrap iterations = 10000 
+bootstrap iterations: 10000 
 group weights:
         10         31        140        151        152        938        942 
 0.05204461 0.04646840 0.02478315 0.14560099 0.30359356 0.29120198 0.13630731 
